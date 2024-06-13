@@ -1,0 +1,155 @@
+@media screen and (max-width: 1024px){
+    .personal-info-counter{
+        flex-wrap: wrap;
+    }
+    .personal-info-item:first-child{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+    .personal-info-item{
+
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    .personal-info-item:nth-child(3){
+        border-left: 1px solid #DAE3F8;
+    }
+    .personal-info-item:last-child{
+        width: 60%;
+
+
+    }
+    .special-list{
+        flex-wrap: wrap;
+    }
+    .special-item{
+        width: 100%;
+        height: 172px;
+    }
+    .special-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .services-item{
+        max-width: 191px;
+    }
+    .services-list{
+        flex-wrap: wrap;
+    }
+    .sidebar-menu-item{
+        padding-right: 12px;
+    }
+    .sidebar-menu-link{
+        white-space: nowrap;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .navbar{
+        padding: 0;
+    }
+    .services-item {
+        max-width: 100%;
+    }
+    .navbar-profile-info{
+        display: none;
+    }
+    .personal-manager-contact{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    .navbar{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    .mobile-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 63px;
+        width: 100%;
+
+    }
+    .sidebar-head{
+        padding: 0;
+        width: 158px;
+    }
+    header{
+        padding: 19px 15px 11px 15px;
+    }
+    .contacts{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .contacts a:first-child{
+        color: #2C3036;
+        text-align: right;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 4%;
+    }
+    .contacts a:last-child{
+        color: #53565B;
+        font-size: 10px;
+        line-height: 12px;
+        text-decoration: underline;
+        font-family: "Golos Text", sans-serif;
+    }
+    .personal-info{
+        padding: 30px;
+    }
+    .welcome-text{
+        font-size: 18px;
+    }
+    .personal-info-item{
+        width: 100%!important;
+        border-right: 0;
+        border-left: 1px solid #DAE3F8;
+    }
+    .special{
+        padding: 30px;
+    }
+    .block-title{
+        font-size: 18px;
+    }
+    .sidebar-text{
+        font-size: 7px;
+    }
+    .sidebar-title{
+        font-size: 10px;
+    }
+    .bottom-mobile-menu{
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        height: 66px;
+        width: 100%;
+        background: #fff;
+        justify-content: space-between;
+        padding: 13px 15px;
+        border-top: 1px solid #DAE3F8;
+
+    }
+    .bottom-mobile-menu svg circle,
+    .bottom-mobile-menu svg path,
+    .bottom-mobile-menu svg line{
+        stroke: #546070;
+    }
+    .bottom-mobile-menu .mobile-menu-item:last-child svg path{
+        stroke: #2C3036;
+
+    }
+}

@@ -41,7 +41,7 @@ aside{
     font-size: 14px;
     font-weight: 700;
     padding-top: 4px;
-
+    white-space: nowrap;
 }
 .sidebar-text{
     color: #5e5e5e;
@@ -82,9 +82,9 @@ hr{
     line-height: 19px;
     gap: 10px;
     align-items: center;
-    font-weight: 500;
-
+    font-family: "Golos Text", sans-serif;
 }
+
 
 .sidebar-menu-item:hover .sidebar-menu-link{
     color: #fff;
@@ -180,6 +180,8 @@ header{
     gap: 70px;
     justify-content: space-between;
     width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .navbar-search{
     max-width: 1058px;
@@ -264,9 +266,12 @@ header{
     margin-bottom: 25px;
     padding: 5px 0 5px 20px;
     border-left: 5px solid #D92020;
+    font-weight: 500;
 }
 .welcome-text span{
     color: #d92020;
+    font-weight: 600;
+
 }
 .personal-info-item{
     border-right: 1px solid #DAE3F8;
