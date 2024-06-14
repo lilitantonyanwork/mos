@@ -326,6 +326,60 @@
         padding-right: 20px;
         padding-left: 20px;
     }
+    .propusk-table-mob .cars-table-mob-head div:last-child{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .propusk-table-mob  div:last-child p{
+        width: 100%;
+    }
+    .propusk-table-mob .cars-table-body .fw{
+        width: 100%!important;
+        background: transparent;
+        border-left: 1px solid #DAE3F8;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+    }
+    .propusk-table-mob .cars-table-body .fw .btn{
+        width: 100%;
+    }
+    .propusk-table-mob   .cars-table-body > div:last-child {
+        flex-direction: column;
+    }
+    .propusk-table-mob   .cars-table-body div.propusk-status, .propusk-table-mob   .cars-table-body div.propusk-photo{
+        flex-direction: row;
+    }
+    .cars-table{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .propusk-table-content p.start{
+        font-size: 12px;
+    }
+    .propusk-table-content p.end{
+        font-size: 12px;
+    }
+    .cars-table-body > div:first-child{
+        padding-right: 5px;
+    }
+    .propusk-table-content .cars-table-body > div:first-child{
+        width: 110px;
+    }
+    .propusk-table-content  .cars-table-body > div:last-child:not(.fw){
+        width: calc(100% - 110px);
+    }
+    .content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .propusk-table-content .cars-table-mob-head > div:first-child{
+        width: 110px;
+    }
+    .propusk-table-content .cars-table-mob-head >div:last-child{
+        width: calc(100% - 110px);
+
+    }
 }
 
 @media screen and (max-width: 480px) {

@@ -4,6 +4,9 @@ body{
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
+input{
+    outline: none;
+}
 img{
     max-width: 100%;
 }
@@ -791,7 +794,41 @@ input::placeholder{
 
 .propusk-table-content p{
     margin-bottom:12px;
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: "Golos Text", sans-serif;
+    white-space: nowrap;
 }
-.propusk-table-content td{
+.propusk-table-content p:last-child{
+    color: #8E909D;
+    margin-bottom: 0;
+}
+.propusk-table-content p.start{
+    color: #27AE60;
+}
+.propusk-table-content p.end{
+    color: #d92020;
+}
+.propusk-table-content td, .propusk-table-content th{
     text-align: left;
+    white-space: nowrap;
+}
+.propusk-table-content .car-status-th{
+    width: 50px;
+}
+.propusk-table-content .car-status div{
+    width: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 0;
+    gap: 20px;
+}
+.propusk-table-content .car-status div span{
+    margin-top: 0;
 }
