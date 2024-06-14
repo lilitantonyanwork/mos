@@ -630,3 +630,117 @@ thead{
 .car-table-pagination{
     margin-top: 58px;
 }
+.login{
+    width: 920px;
+    margin: 168px auto;
+    border-radius: 15px;
+    background: #fff;
+    overflow: hidden;
+
+}
+.login-right{
+    padding: 73px 50px 97px;
+    box-sizing: border-box;
+}
+.login-with{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+.login h2{
+    font-size: 24px;
+    line-height: 29px;
+    color: #2C3036;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding-left: 20px;
+    border-left: 5px solid #d92020;
+}
+.login-actions{
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-actions a{
+    color: #d92020;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.login-actions p{
+    font-size: 14px;
+    font-family: "Golos Text", sans-serif;
+}
+
+.login-text{
+    color: #9A9A9A;
+    font-weight: 400;
+}
+.login-reg-text{
+    font-weight: 500;
+    color: #2C3036;
+}
+.login form{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.input-clear{
+    border: none;
+    outline: none;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+}
+.input-clear:focus,
+.input-clear:focus-visible{
+    border: none;
+}
+.form-item{
+    width: 100%;
+    border: 1px solid #DAE3F8;
+    border-radius: 5px;
+    padding: 15px;
+    gap: 10px;
+}
+
+.login form .btn{
+    width: 100%;
+}
+input::placeholder{
+    color: #9A9A9A;
+    font-family: "Golos Text", sans-serif;
+}
+.login-email-text{
+    gap: 20px;
+}
+
+.login-email-text p{
+    color: #9A9A9A;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Golos Text", sans-serif;
+    white-space: nowrap;
+}
+.login-email-text hr{
+    width: 100%;
+}
+.login-right, .login-left{
+    width: 50%;
+    position: relative;
+}
+.login-left img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-left:before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(118.5deg, rgba(54, 54, 54, 0.97) 20.9%, rgba(54, 54, 54, 0.8) 87.21%);
+    opacity: 0.5;
+}

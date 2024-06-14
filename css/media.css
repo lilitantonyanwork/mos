@@ -57,8 +57,20 @@
     td,th{
         white-space: nowrap;
     }
+.login-section{
+    min-height: 100vh;
+}
+.login-left img{
+    height: 100%;
+    object-fit: cover;
+}
 }
 
+@media screen and (max-width: 920px){
+    .login{
+        width: 90%;
+    }
+}
 
 @media screen and (max-width: 900px){
     .navbar{
@@ -287,10 +299,39 @@
     .cars-table-mob-item-closed  .cars-table-mob-head div svg{
         transform: rotate(180deg);
     }
+
+    .login{
+        flex-direction: column;
+        margin: 15px 0;
+
+
+    }
+    .login-left{
+        width: 100%;
+        height: 300px;
+
+    }
+    .login-left img{
+        object-fit: cover;
+        width: 100%;
+
+    }
+    .login-right{
+        width: 100%;
+        padding-bottom: 50px;
+        padding-top: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .cars-add .btn{
         width: 100%;
+    }
+    .login-left{
+        width: 100%;
+        height: 150px;
+
     }
 }
