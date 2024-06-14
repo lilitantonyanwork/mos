@@ -22,6 +22,9 @@ aside{
     background: #FEFEFE;
     border-right:1px solid #DAE3F8
 }
+.j-spc-btw{
+    justify-content: space-between;
+}
 
 .df{
     display: flex;
@@ -446,4 +449,184 @@ div{
 }
 .main-large{
     width: calc(100% - 110px);
+}
+.cars-filter{
+    background: #fff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.cars-table{
+    background: #fff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+.cars-filter-sort{
+    gap: 20px;
+}
+.cars-filter-sort{
+    color: #546070;
+    font-family: "Golos Text", sans-serif;
+}
+.sort-btn{
+    color: #D92020;
+}
+
+.btn{
+    background: #d92020;
+    color: #FEFEFE;
+    letter-spacing: 2px;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 500;
+    gap: 5px;
+    padding: 13px;
+    width: 210px;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 5px;
+
+}
+table{
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+
+    border-radius: 10px;
+    border: 1px solid #DAE3F8;
+
+}
+td{
+    border-bottom: 1px solid #DAE3F8;
+}
+th{
+    border-bottom: 1px solid #DAE3F8;
+}
+tr:last-child td{
+    border-bottom: 0;
+}
+th,td{
+    padding: 20px;
+}
+table th:first-child{
+    border-top-left-radius: 10px;
+}
+table th:last-child{
+    border-top-right-radius: 10px;
+}
+table tr:last-child td:last-child{
+    border-bottom-left-radius: 10px;
+}
+table tr:last-child td:first-child{
+    border-bottom-right-radius: 10px;
+}
+th{
+    color: #546070;
+    font-family: "Golos Text", sans-serif;
+    text-align: center;
+    font-weight: 400;
+}
+td{
+    text-align: center;
+    color: #2C3036;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+}
+thead{
+    background: #F2F5FA;
+    overflow: hidden;
+    padding: 20px;
+}
+.settings-btn{
+    text-indent: -9999px;
+}
+.car-img-add{
+    width: 60px;
+    height: 60px;
+    background: #EDEDED;
+    border-radius: 10px;
+}
+.car-status{
+    text-align: left;
+}
+.car-status div{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: fade;
+    width: 100px;
+    display: block;
+}
+.car-status-green{
+    width: 10px;
+    height: 10px;
+    background: #27AE60;
+    border-radius: 100%;
+    margin-right: 5px;
+    float: left;
+    margin-top: 5px;
+}
+.car-status-gray{
+    width: 10px;
+    height: 10px;
+    background: #DFDFDF;
+    border-radius: 100%;
+    margin-right: 5px;
+    float: left;
+    margin-top: 5px;
+
+}
+
+.car-status-th{
+    width: 100px;
+    text-align: left;
+}
+.car-photo-th{
+    text-align: left;
+}
+
+.car-table-time{
+    color: #9A9A9A;
+}
+.car-load-more{
+    color: #2C3036;
+    font-size: 14px;
+    font-family: "Golos Text", sans-serif;
+    gap: 5px;
+}
+.pagination{
+    align-items: center;
+    gap: 10px;
+    font-family: "Golos Text", sans-serif;
+}
+.pagination-item-prev{
+    margin-right: 5px;
+}
+.pagination-item-next{
+    margin-left: 5px;
+}
+.pagination-item{
+    align-items: center;
+    display: flex;
+}
+.pagination-item-active{
+    color: #D92020;
+}
+.pagination-item a{
+    color: #2C3036;
+    font-family: "Golos Text", sans-serif;
+}
+.pagination-item a:hover {
+    color: #D92020;
+}
+.pagination-item a:hover svg path{
+    stroke: #d92020;
+}
+.car-table-result-count{
+    color: #9A9A9A;
+    font-size: 14px;
+    font-family: "Golos Text", sans-serif;
+}
+.car-table-pagination{
+    margin-top: 58px;
 }

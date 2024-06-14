@@ -1,4 +1,7 @@
 @media screen and (max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
     .personal-info-counter{
         flex-wrap: wrap;
     }
@@ -41,6 +44,17 @@
         padding-right: 12px;
     }
     .sidebar-menu-link{
+        white-space: nowrap;
+    }
+    .cars-table-scroll{
+        max-width: 1280px;
+        width: 100%;
+        overflow-x: auto;
+    }
+    .cars-filter{
+        display: none;
+    }
+    td,th{
         white-space: nowrap;
     }
 }
@@ -154,5 +168,123 @@
     .bottom-mobile-menu .mobile-menu-item:last-child svg path{
         stroke: #2C3036;
 
+    }
+    .cars-filter{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .cars-add{
+        order: 1;
+    }
+    .cars-add .btn{
+        width: 285px;
+    }
+    .cars-filter-sort{
+        order: 2;
+    }
+    .cars-table-scroll,.car-load-more, .car-table-result-count{
+        display: none;
+    }
+    .cars-table-mob-item{
+        margin-bottom: 20px;
+    }
+    .cars-table-mob-head{
+        display: flex;
+
+        box-sizing: border-box;
+    }
+    .cars-table-mob-head div{
+        padding: 23px 20px;
+        display: flex;
+        align-items: center;
+        color: #2C3036;
+        font-size: 14px;
+        border: 1px solid #DAE3F8;
+
+
+    }
+    .cars-table-mob-head div:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        border-left: none;
+        width: calc(100% - 124px);
+        }
+    .cars-table-mob-head div:first-child{
+        background: #F2F5FA;
+        border: 1px solid #DAE3F8;
+        color: #546070;
+        font-size: 14px;
+        width: 124px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+    }
+    .cars-table-body{
+        display: flex;
+    }
+    .cars-table-body > div{
+        padding: 23px 20px;
+        display: flex;
+        align-items: center;
+        color: #2C3036;
+        font-size: 14px;
+
+    }
+    .cars-table-body > div:first-child{
+        background: #F2F5FA;
+        border: 1px solid #DAE3F8;
+        border-bottom: 0;
+        color: #546070;
+        font-size: 14px;
+        width: 124px;
+        word-break: break-all;
+    }
+    .cars-table-body > div:last-child{
+
+        border: 1px solid #DAE3F8;
+        border-bottom: 0;
+        border-left: 0;
+        width: calc(100% - 124px);
+    }
+    .cars-table-body:last-child > div:last-child{
+            border-bottom: 1px solid #DAE3F8;
+
+        border-bottom-right-radius: 10px;
+    }
+    .cars-table-body:last-child > div:first-child{
+        border-bottom: 1px solid #DAE3F8;
+
+        border-bottom-left-radius: 10px;
+    }
+    .cars-table-mob-item-closed .cars-table-body{
+        display: none;
+    }
+
+    .car-table-pagination{
+        justify-content: center;
+    }
+    .cars-table-mob-item-opened  .cars-table-mob-head div:first-child{
+        border-bottom-left-radius: 0;
+        border-bottom: 0;
+    }
+    .cars-table-mob-item-opened  .cars-table-mob-head div:last-child{
+        border-bottom-right-radius: 0;
+        border-bottom: 0;
+
+    }
+
+    .cars-table-mob-item-opened .car-table-time{
+        margin-left: 5px;
+    }
+    .cars-table-mob-item .car-status-green,
+    .cars-table-mob-item .car-status-gray{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .cars-add .btn{
+        width: 100%;
     }
 }
