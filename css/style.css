@@ -693,6 +693,7 @@ thead{
     outline: none;
     font-family: "Golos Text", sans-serif;
     font-weight: 400;
+    color: #546070;
 }
 .input-clear:focus,
 .input-clear:focus-visible{
@@ -704,6 +705,7 @@ thead{
     border-radius: 5px;
     padding: 15px;
     gap: 10px;
+    position: relative;
 }
 
 .login form .btn{
@@ -743,4 +745,45 @@ input::placeholder{
     height: 100%;
     background: linear-gradient(118.5deg, rgba(54, 54, 54, 0.97) 20.9%, rgba(54, 54, 54, 0.8) 87.21%);
     opacity: 0.5;
+}
+.password-security-low{
+    background: #D92020;
+    position: absolute;
+    bottom: 0;
+    width: 45px;
+    height: 4px;
+    left: 0;
+}
+
+.password-security{
+    background: #FBBB00;
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    height: 4px;
+    left: 0;
+}
+.password-security-hight{
+    background: #27AE60;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    left: 0;
+}
+.password-error{
+    background: #D92020;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    left: 0;
+}
+.password-confirm{
+    background: #27AE60;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    left: 0;
 }
