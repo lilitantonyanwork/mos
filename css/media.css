@@ -281,6 +281,12 @@
     .cars-table-mob-item .car-status-gray{
         margin-top: 0;
     }
+    .cars-table-mob{
+        display: block;
+    }
+    .cars-table-mob-item-closed  .cars-table-mob-head div svg{
+        transform: rotate(180deg);
+    }
 }
 
 @media screen and (max-width: 480px) {
