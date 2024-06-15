@@ -320,6 +320,12 @@ header{
 
 }
 
+.add-car{
+    background: #fff;
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
 
 
 .block-title{
@@ -481,7 +487,6 @@ div{
 .btn{
     background: #d92020;
     color: #FEFEFE;
-    letter-spacing: 2px;
     font-family: "Golos Text", sans-serif;
     font-weight: 500;
     gap: 5px;
@@ -831,4 +836,371 @@ input::placeholder{
 }
 .propusk-table-content .car-status div span{
     margin-top: 0;
+}
+
+.disabled{
+    background: #9A9A9A;
+    color: #FEFEFE;
+}
+.add-car h2{
+    padding-left: 20px;
+    color: #2C3036;
+    font-size: 24px;
+    font-weight: 500;
+    border-left: 5px solid #d92020;
+    margin-bottom: 20px;
+}
+.btn-gray{
+    background: #fff;
+    border: 1px solid #4E505A;
+    color: #4E505A;
+    width: 160px!important;
+}
+.add-car form{
+    display: flex;
+    gap: 20px;
+}
+.car-photo{
+    width: 194px;
+    height: 194px;
+    border-radius: 10px;
+    background: #EDEDED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.car-photo svg{
+    width: 40px;
+    height: 40px;
+}
+.add-car-item:nth-child(2){
+    width: 221px;
+}
+.add-car-item:last-child{
+    width: calc(100% - 415px);
+}
+
+.cars-info p{
+    color: #2C3036;
+    font-size: 16px;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    margin-bottom: 7px;
+}
+
+.cars-info span{
+    color: #8E909D;
+}
+
+.car-images{
+    gap: 10px;
+}
+.car-img{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    background: #EDEDED;
+}
+.car-actions{
+    gap: 20px;
+    height: 48px;
+    align-items: center;
+    position: relative;
+}
+.car-actions .btn{
+    font-weight: 400;
+    width: 196px;
+}
+.car-info-tooltip{
+    cursor: pointer;
+}
+.car-info-tooltip:hover .tooltip-info{
+    display: block;
+    position: absolute;
+    width: 256px;
+    background: #FFFFFF;
+    color: #556171;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px #00000026;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    top: -65px;
+    left: -63px;
+
+}
+.car-info-tooltip:hover .tooltip-info svg{
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.propusk-list{
+    gap: 20px;
+}
+
+.propusk{
+    width: 50%;
+    border: 1px solid #DAE3F8;
+    border-radius: 15px;
+    background: #fff;
+    padding: 30px;
+
+}
+
+.propusk th{
+    font-size: 14px;
+    padding: 20px 15px;
+}
+.propusk td{
+    font-size: 14px;
+    padding: 20px 15px;
+}
+
+.propusk td span{
+    color: #8E909D;
+}
+.propusk .car-table-pagination{
+    margin-top: 33px;
+}
+.propusk  table{
+    margin-top: 40px;
+}
+.propusk h2{
+    font-size: 24px;
+    padding-left: 20px;
+    border-left: 5px solid #d92020;
+    color: #2C3036;
+    font-weight: 500;
+
+}
+
+.propusk .form-filter{
+    margin-top: 30px;
+    align-items: flex-end;
+}
+
+.propusk-btn{
+    background: #fff;
+    border: 1px solid #DAE3F8;
+    width: 48px;
+    height: 39px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.propusk-btn-active{
+    background: #F2F5FA;
+    border: 1px solid #DAE3F8;
+    width: 48px;
+    height: 39px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+.form-filter-item >div{
+    width: 199px;
+    margin-bottom: 30px;
+}
+.form-filter-item >div:last-child{
+    margin-bottom: 0;
+}
+.form-filter-item >div label{
+    margin-bottom: 7px;
+    color: #2C3036;
+    font-size: 14px;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+}
+.form-filter-item input{
+    border: 1px solid #DAE3F8;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 14px 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-filter-item  div button{
+    border: 1px solid #DAE3F8;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 54px;
+    height: 48px;
+}
+.form-filter-item:last-child > div{
+    width: 246px;
+    display: flex;
+    justify-content: flex-end;
+  align-items: flex-end;
+    flex-direction: column;
+}
+.form-filter-item:last-child select{
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    border: 1px solid #DAE3F8;
+    padding: 14px 15px;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
+
+.form-filter-item:last-child .btn{
+    width: 211px;
+}
+.form-filter-item div  .btn-opacity{
+    background: #FFECEC;
+    color: #EC8080;
+    border: none;
+}
+.custom-select{
+    position: relative;
+}
+.custom-select svg{
+  
+    position: absolute;
+    right: 15px;
+    bottom: 12px;
+
+}
+.f-column{
+    flex-direction: column;
+}
+.add-car input{
+    height: 48px;
+    border: 1px solid #DAE3F8;
+    border-radius: 5px;
+    padding: 14px 15px;
+    box-sizing: border-box;
+}
+.add-car select{
+    height: 48px;
+    border: 1px solid #DAE3F8;
+    border-radius: 5px;
+    padding: 14px 15px;
+    box-sizing: border-box;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
+.add-car-item div:first-child{
+    margin-bottom: 20px;
+}
+
+.add-car input[type=checkbox] + label{
+    color: #9A9A9A;
+    font-size: 14px;
+    font-family: "Golos Text", sans-serif;
+}
+
+.add-car input[type=checkbox]{
+    margin-right: 8px;
+    margin-left: 0;
+   
+}
+.add-car-item:last-child div:last-child{
+    margin-top: 60px;
+    justify-content: flex-end;
+    gap: 28px;
+}
+.add-car-item div{
+    gap: 7px;
+}
+.add-car-item .has-checkbox{
+    gap: 0;
+}
+.add-car-item .btn{
+    width: 185px;
+}
+
+.popup{
+    position:fixed;
+    background: rgba(43, 43, 43, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    top: 0;
+    width: 100%;
+}
+.popup-content{
+    background: #fff;
+    max-width: 583px;
+    width: 100%;
+    padding: 60px 40px ;
+    border-radius: 15px;
+    position: relative;
+    max-height: 747px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+   
+}
+.popup-content h2{
+    color: #2C3036;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29px;
+    padding-left: 20px;
+    border-left: 5px solid #D92020;
+    margin-bottom: 40px;
+
+}
+.popup-content h4{
+    color: #4E505A;
+    font-size: 18px;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.popup-content p{
+    color: #4E505A;
+    line-height: 20px;
+    margin-bottom: 15px;
+    font-family: "Golos Text", sans-serif;
+}
+.popup-content a{
+    color: #CB2222;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.popup-content span{
+    color: #9A9A9A;
+}
+.popup-content .btn {
+   margin-top:auto;
+   width: 100%;
+}
+.popup-content div{
+    margin-bottom: 25px;
+}
+.popup-close{
+    position: absolute;
+    top: 20px;
+    right: 20px
+}
+.popup-lg .popup-content{
+    max-width: 1024px;
+    width: 100%;
+}
+
+.popup-lg .popup-content .btn{
+    max-width: 503px;
+    width: 100%;
+}
+.popup-success .popup-content{
+   max-width: 583px;
+   max-height: 363px;
+   padding-bottom: 40px;
+   padding-top: 93px;
+}
+.popup-success .popup-content p{
+    margin-top: 15px;
+    margin-bottom: 65px;
 }
