@@ -162,6 +162,27 @@
     .form-filter-item:last-child > div{
         width: 100%;
     }
+    .car-actions{
+        width: 100%;
+        order: 3;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    .cars-info{
+        width: 100%;
+    }
+    .cars-filter{
+        padding-bottom: 80px;
+
+    }
+    .car-actions .btn{
+        width: 100%;
+    }
+    .car-info-tooltip:hover .tooltip-info svg{
+        left: 10px;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -458,6 +479,7 @@
         padding-left:20px;
         padding-right: 20px;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -477,4 +499,5 @@
         width: 100%!important;
        
     }
+
 }
