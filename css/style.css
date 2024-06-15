@@ -1204,3 +1204,60 @@ input::placeholder{
     margin-top: 15px;
     margin-bottom: 65px;
 }
+
+.car-number{
+    width: 36px;
+    height: 35px;
+    background: #F6F7FB;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.fine-table-content th,
+.fine-table-content td{
+    text-align: left;
+}
+.fine-table-content th:last-child{
+    width: 208px;
+}
+
+.price{
+    font-weight: 500;
+    color: #2C3036;
+    white-space: nowrap;
+}
+.fine-red{
+    color: #D92020;
+    text-decoration: underline;
+}
+.fine-green{
+    color: #27AE60;
+}
+
+.car-number:hover .tooltip-info{
+    display: block;
+    position: absolute;
+    width: 127px;
+    background: #FFFFFF;
+    color: #2C3036;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0px 0px 15px 0px #00000026;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    bottom: 48px;
+
+
+}
+.car-number:hover .tooltip-info svg{
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.fine-table-content .disabled{
+    background: #F0F2F6;
+    border: 1px solid #DAE3F8;
+    color: #9A9A9A;
+}
