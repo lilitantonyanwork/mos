@@ -1261,3 +1261,138 @@ input::placeholder{
     border: 1px solid #DAE3F8;
     color: #9A9A9A;
 }
+
+.diagnostic-table-content .car-status div{
+    width: 53px;
+}
+.diagnostic-table-content  th,
+.diagnostic-table-content  td{
+    text-align: left;
+}
+.diagnostic-table-content .btn-opacity{
+    width: 163px;
+    background: #FFECEC;
+    color: #EC8080;
+    text-decoration: underline  ;
+}
+.tabs{
+    margin-bottom: 20px;
+}
+.tabs-list{
+    gap: 15px;
+}
+.tabs-item{
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #DAE3F8;
+}
+.tabs-item a{
+    color: #2C3036;
+    font-weight: 400;
+    font-family: "Golos Text", sans-serif;
+
+}
+.tabs-item a:hover{
+    color: #d92020;
+    text-decoration: underline;
+}
+.tabs-item-active a{
+    color: #d92020;
+    text-decoration: underline;
+
+}
+.diagnostic-card-list{
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #DAE3F8;
+    padding: 28px 30px;
+    gap: 40px;
+}
+.diagnostic-card-list h2 {
+    padding-left: 20px;
+    border-left: 5px solid #d92020;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.diagnostic-card-table{
+    border: 1px solid #DAE3F8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.diagnostic-card-table-row{
+    background: rgba(242, 245, 250, 0.8);
+
+}
+.diagnostic-card-table-row div{
+    width: 50%;
+    border-right: 1px solid #DAE3F8;
+    padding: 10px 20px;
+
+}
+.diagnostic-card-table-row div:last-child{
+    border-right: 0;
+
+}
+.diagnostic-card-table-row:nth-child(2n){
+    background: #fff;
+}
+.diagnostic-card-table-row div.fw{
+    width: 100%;
+}
+.diagnostic-card-table-row div p{
+    display: flex;
+    justify-content: space-between;
+
+}
+.diagnostic-card-table-row div p > span{
+    display: flex;
+    width: calc(100% - 245px);
+}
+
+.diagnostic-card-table-row div p > span:first-child{
+   width: 185px;
+}
+
+.diagnostic-card-table-row div p{
+    gap: 60px;
+    font-family: "Golos Text", sans-serif;
+    color: #546070;
+}
+.diagnostic-card-item .btn{
+    width: 281px;
+    height: 48px;
+    box-shadow: 0px 0px 10px 0px #4421211A;
+    background: #CB2222;
+}
+
+.diagnostic-card-table-row div:nth-child(2){
+    border-right: 0;
+}
+.diagnostic-card-table-row div a{
+    color: #D92020;
+    justify-content: flex-end;
+    gap: 5px;
+    text-decoration: underline;
+    align-items: flex-start;
+    font-family: "Golos Text", sans-serif;
+}
+.breadcrumbs ul {
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.breadcrumbs ul li {
+    gap: 10px;
+}
+.breadcrumbs ul li a{
+    color: #2C3036;
+    font-size: 15px;
+    font-family: "Golos Text", sans-serif;
+}
+.breadcrumbs ul li{
+    color: #95979A;
+    font-size: 15px;
+    font-family: "Golos Text", sans-serif;
+}
