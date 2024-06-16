@@ -1396,3 +1396,300 @@ input::placeholder{
     font-size: 15px;
     font-family: "Golos Text", sans-serif;
 }
+.booking-card .add-car-item{
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.booking-card form{
+    flex-direction: column;
+    gap: 25px;
+    height: 100%;
+}
+.booking-card .car-photo{
+    width: 160px;
+    height: 89px;
+}
+.booking-card .add-car-item:nth-child(2) div{
+    width: 30%;
+
+}
+.booking-card .add-car-item:last-child{
+    margin-top: auto;
+    margin-bottom: 60px;
+}
+.booking-card .add-car-item:nth-child(2){
+    gap: 20px;
+}
+.booking-card .add-car-item input{
+
+    width: 100%;
+}
+.booking-card form label{
+    gap: 10px;
+    font-family: "Golos Text", sans-serif;
+    color: #2C3036;
+    font-size: 14px;
+}
+.booking-card .add-car-item div:first-child{
+    margin-bottom: 0;
+}
+.booking-card-content{
+    height: calc(100% - 150px);
+}
+.booking-card-content .add-car{
+    height: 100%;
+}
+.balance-add{
+    color: #27AE60;
+}
+
+.balance{
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #DAE3F8;
+    border-radius: 15px;
+}
+.balance-info h2{
+    color: #2C3036;
+    font-weight: 600;
+    font-family: "Golos Text", sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.balance-info h2 span{
+    font-size: 24px;
+}
+
+.balance-info p span{
+    color: #CB2222;
+    font-weight: 500;
+    font-family: "Golos Text", sans-serif;
+    margin-right: 10px;
+}
+.balance-info p  {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: "Golos Text", sans-serif;
+    color: #2C3036;
+}
+.balance-info svg{
+    margin-left: 10px;
+}
+.balance-info .btn{
+    width: 246px;
+}
+.balance-card-list{
+    margin-top: 30px;
+    gap: 20px;
+}
+.balance-card-list div{
+    width: 190px;
+    height: 109px;
+    border: 1px solid #DAE3F8;
+    border-radius: 5px;
+}
+.balance-history{
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #DAE3F8;
+    border-radius: 15px;
+    margin-top: 20px;
+    min-height: 529px;
+}
+.balance-history h2{
+    padding-left: 20px;
+    border-left: 5px solid #d92020;
+    font-size: 24px;
+    color: #2C3036;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.balance-filter{
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.balance-filter div{
+    display: flex;
+    align-content: center;
+    gap: 10px;
+}
+.balance-history-row{
+    border-top: 1px solid #DAE3F8;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+.balance-history-row p{
+    color: #2C3036;
+    font-family: "Golos Text", sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.balance-history-row p:last-child{
+    margin-bottom: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.balance-history-row div:last-child{
+    width: 100%;
+    justify-content: space-between;
+}
+.balance-history-row div:last-child  p:first-child{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+}
+.notification{
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #DAE3F8;
+    border-radius: 15px;
+}
+.notification h2{
+    padding-left: 20px;
+    border-left: 5px solid #d92020;
+    color: #2C3036;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.notification-title{
+    color: #546070;
+    font-size: 14px;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    gap: 10px;
+    white-space: nowrap;
+    margin-bottom: 30px;
+    border-bottom: 0;
+}
+.notification-list h3{
+    color: #4E505A;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-family: "Golos Text", sans-serif;
+}
+.notification-list h3 span{
+    margin-right: 10px;
+}
+.notification-title hr{
+    width: 100%;
+}
+.notification-list p{
+    color: #4E505A;
+    font-family: "Golos Text", sans-serif;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.notification-list a{
+    color: #CB2222;
+    text-decoration: underline;
+    margin-right: 20px;
+}
+.notification-list  > div {
+    padding-bottom: 20px;
+
+    border-bottom: 1px solid #DAE3F8;
+    margin-bottom: 20px;
+}
+.notification-list  > div:last-child{
+    border-bottom: 0;
+}
+.support .add-car-item div{
+    width: 221px;
+    margin-bottom: 0;
+}
+.support .add-car-item{
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+.support .add-car-item div:nth-child(3){
+    width: 100%;
+}
+.support .add-car-item:last-child{
+    width: 100%;
+}
+.faq{
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #DAE3F8;
+    border-radius: 15px;
+}
+.faq h2{
+    padding-left: 20px;
+    border-left: 5px solid #d92020;
+    color: #2C3036;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.faq-list{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.faq-item{
+    width: 48%;
+    border-bottom: 1px solid #DAE3F8;
+
+}
+.faq-title{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    color: #2C3036;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+
+}
+.faq-text{
+    color: #546070;
+    line-height: 19px;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.support-contact h2{
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 500;
+    color: #2C3036;
+}
+.support-contact{
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #DAE3F8;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.support-contact p{
+    color: #8D8D8D;
+    font-size: 12px;
+    font-family: "Golos Text", sans-serif;
+    margin-bottom: 3px;
+
+}
+.support-contact p:last-child{
+    color: #CB2222;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+}
+.faq-item-opened button{
+    transform: rotate(180deg);
+}
+.support label{
+    font-size: 14px;
+    color: #2C3036;
+}
+.support label span{
+    color: #CB2222;
+}

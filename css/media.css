@@ -41,6 +41,10 @@
         bottom: -7px;
         left: 64%;
     }
+    .balance-card-list{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
     
 }
 
@@ -122,6 +126,16 @@
 .add-car-item:nth-child(2){
     width: 100%;
 }
+    .booking-card .add-car-item:nth-child(2) div{
+        width: 47%;
+    }
+    .booking-card .add-car-item:last-child{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .faq-item{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 920px){
@@ -182,7 +196,33 @@
     .car-info-tooltip:hover .tooltip-info svg{
         left: 10px;
     }
+    .booking-card .add-car-item:nth-child(2) div{
+        width: 100%;
+    }
+    .booking-card  .add-car-item:last-child div:last-child{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 0;
+    }
+    .booking-card  .add-car-item .btn{
+        width: 100%!important;
+    }
 
+    .balance-history-row div:last-child p:first-child span{
+        white-space: nowrap;
+    }
+    .balance-history-row{
+        align-items: flex-start;
+    }
+    .balance-history-row p:last-child{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .support .add-car-item div{
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -529,6 +569,57 @@
     .fines-table-mob .cars-table-body .fw .btn{
         width: 100%;
     }
+    .booking-card .add-car h2{
+        font-size: 20px;
+    }
+    .balance-history-row p{
+        font-size: 14px;
+    }
+    .balance-card-list div{
+        width: 147px;
+        height: 83px;
+    }
+    .balance-card-list{
+        gap: 9px;
+    }
+    .balance{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .balance-info p{
+        font-size: 14px;
+    }
+    .balance-info .btn{
+        width: 228px;
+    }
+    .balance-info h2{
+        font-size: 32px;
+    }
+    .balance-info h2 span{
+        font-size: 20px;
+    }
+    .notification h2{
+        font-size: 20px;
+    }
+    .notification-list h3{
+        font-size: 16px;
+    }
+    .notification{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .notification-list p{
+        font-size: 14px;
+    }
+    .add-car-item:last-child div:last-child{
+        margin-top: 0;
+    }
+    .support  h2, .faq h2{
+        font-size: 20px;
+    }
+    .support-contact h2{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -547,6 +638,9 @@
     .add-car-item .btn{
         width: 100%!important;
        
+    }
+    .add-car-item  .btn{
+        width: 100%;
     }
 
 }
