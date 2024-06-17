@@ -136,6 +136,22 @@
     .faq-item{
         width: 100%;
     }
+    .add-car-item:nth-child(2){
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .profile .add-car-item:last-child div{
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+    .profile-form-item:last-child{
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    .profile-form-item div{
+        width: 48%;
+    }
 }
 
 @media screen and (max-width: 920px){
@@ -221,6 +237,19 @@
         gap: 5px;
     }
     .support .add-car-item div{
+        width: 100%;
+    }
+    .profile-form-item div{
+        width: 100%;
+    }
+    .profile-form-item:last-child div{
+        flex-wrap: wrap;
+    }
+    .profile-form-item:last-child div .btn{
+        width: 100%!important;
+    }
+    .profile .add-car-item:nth-child(2) div {
+
         width: 100%;
     }
 }
@@ -641,6 +670,9 @@
     }
     .add-car-item  .btn{
         width: 100%;
+    }
+    .profile .add-car-item .btn-opacity{
+        width: 100%!important;
     }
 
 }
