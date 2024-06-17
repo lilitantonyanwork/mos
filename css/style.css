@@ -1783,3 +1783,120 @@ textarea{
     font-family: "Golos Text", sans-serif;
     outline: none;
 }
+.fine-view{
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #DAE3F8;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.fine-view-filter{
+    margin-bottom: 29px;
+}
+.fine-item{
+    border-top: 1px solid #DAE3F8;
+    padding-top: 20px;
+}
+
+.fine-photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background: url("../images/fine.png");
+    background-size: cover;
+}
+
+.popup-propusk .btn-opacity{
+    width: 205px;
+}
+.popup-propusk >div >div{
+    gap: 20px;
+    color: #2C3036;
+    font-family: "Golos Text", sans-serif;
+}
+.popup-propusk .popup-content p.car-table-time{
+    color: #9A9A9A;
+}
+.popup-propusk .popup-content p{
+    color: #CB2222;
+
+}
+.popup-propusk .popup-content > .btn:last-child{
+    margin-top: 70px;
+}
+.navbar-profile:hover .navbar-dropdown{
+    display: flex;
+}
+ .navbar-dropdown{
+    position: absolute;
+    flex-direction: column;
+    width: 191px;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    background: #fff;
+    border: 1px solid #DAE3F8;
+    border-radius: 10px;
+    padding: 15px 20px;
+     top: 75px;
+}
+.navbar-dropdown a{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    gap: 10px;
+    color: #556171;
+    font-family: "Golos Text", sans-serif;
+}
+.navbar-dropdown a:last-child{
+    border-top: 1px solid #DAE3F8;
+}
+.navbar-dropdown a svg  {
+    width: 24px;
+    height: 24px;
+}
+.navbar-dropdown a svg  path{
+    stroke: #556171;
+    fill: #556171;
+}
+
+.navbar-dropdown a:hover {
+    color: #D92020;
+}
+.navbar-dropdown a:hover svg  path{
+    stroke: #D92020;
+    fill: #D92020;
+}
+.cars-filter{
+    position: relative;
+}
+.sort-list{
+    display: none;
+    gap: 10px;
+    position: absolute;
+    top: 70px;
+    width: 228px;
+    border-radius: 10px;
+    background: #fff;
+    padding: 15px 20px;
+    border: 1px solid #DAE3F8;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+
+}
+
+.sort-list a{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #DAE3F8;
+    color: #556171;
+    font-size: 14px;
+    font-family: "Golos Text", sans-serif;
+}
+.sort-list a:last-child{
+    border-bottom: 0;
+}
+.sort-list a:hover{
+    color: #D92020;
+}
+.cars-filter-sort:hover .sort-list{
+    display: flex;
+    cursor: pointer;
+}

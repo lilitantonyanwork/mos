@@ -653,6 +653,9 @@
     .support-contact h2{
         font-size: 16px;
     }
+    .popup-propusk .popup-content > .btn:last-child{
+        margin-top: auto;
+    }
 }
 
 @media screen and (max-width: 480px) {
