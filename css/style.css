@@ -1138,7 +1138,7 @@ input::placeholder{
     max-height: 747px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+
     overflow: auto;
    
 }
@@ -1772,4 +1772,14 @@ input::placeholder{
 }
 .profile-form-item:last-child .btn{
     width: 185px;
+}
+textarea{
+    border: 1px solid #DAE3F8;
+    resize: none;
+    border-radius: 5px;
+    padding: 14px 15px;
+    box-sizing: border-box;
+    height: 48px;
+    font-family: "Golos Text", sans-serif;
+    outline: none;
 }
