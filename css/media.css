@@ -45,7 +45,25 @@
         flex-wrap: wrap;
         justify-content: flex-start;
     }
-    
+
+    .diagnostic-card-table-row div p{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .diagnostic-card-table-row div p > span{
+        width: 100%;
+    }
+    .diagnostic-card-item:last-child .diagnostic-card-table-row{
+        flex-wrap: wrap;
+    }
+    .diagnostic-card-item:last-child  .diagnostic-card-table-row:first-child div:last-child{
+        width: 100%;
+        border-top: 1px solid #DAE3F8;
+    }
+    .diagnostic-card-item:last-child  .diagnostic-card-table-row:last-child div:last-child{
+        padding: 0;
+    }
+
 }
 
 @media screen and (max-width: 1300px){
@@ -155,6 +173,9 @@
     .profile-form-item div{
         width: 48%;
     }
+    .tabs-list{
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (max-width: 920px){
@@ -254,6 +275,9 @@
     .profile .add-car-item:nth-child(2) div {
 
         width: 100%;
+    }
+    .diagnostic-card-table-row div p > span{
+        word-break: break-word;
     }
 }
 
@@ -655,6 +679,16 @@
     }
     .popup-propusk .popup-content > .btn:last-child{
         margin-top: auto;
+    }
+    .diagnostic-card-list h2{
+        font-size: 20px;
+    }
+    .diagnostic-card-list{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .diagnostic-card-table-row div p > span{
+        word-break: break-word;
     }
 }
 
