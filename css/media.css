@@ -81,6 +81,34 @@
         width: 100%;
         overflow-x: auto;
     }
+    .fine-title div:last-child a{
+        text-indent: -9999px;
+    }
+    .fine-car-number{
+        width: auto;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .fine-date p:last-child{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100px;
+        display: block;
+    }
+    .fine-date p:last-child span{
+        display: none;
+    }
+    .fine-car-number{
+        display: none;
+    }
+    .fine-price{
+        margin-left: 30px;
+        margin-top: 7px;
+    }
+    .insurance-item{
+        width: calc((100% - 20px)/2);
+    }
 }
 @media screen and (max-width: 1024px){
     textarea{
@@ -185,6 +213,24 @@
     .tabs-list{
         flex-wrap: wrap;
     }
+    .fine-body{
+        position: relative;
+    }
+    .fine-body .btn{
+        position: absolute;
+        bottom: 17px;
+        right: 0;
+    }
+    .fine-info{
+        margin-bottom: 83px;
+    }
+    .fine-body h2{
+        margin-bottom: 24px;
+    }
+    .fine-info p span {
+        text-align: right;
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (max-width: 920px){
@@ -287,6 +333,53 @@
     }
     .diagnostic-card-table-row div p > span{
         word-break: break-word;
+    }
+    .fine-date span{
+        font-size: 14px;
+    }
+    .fine-date p:last-child{
+        font-size: 14px;
+    }
+    .fine-price{
+        font-size: 14px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .fine-title div:last-child svg{
+        height: 16px;
+        margin-top: 10px;
+    }
+    .fine-body{
+        padding-left: 0;
+    }
+    .fine-price{
+        margin-left: 10px;
+    }
+    .fine-date p{
+        gap: 5px;
+        flex-direction: column;
+    }
+    .fine-date{
+        flex-direction: row;
+        align-items: flex-end;
+        padding-bottom: 10px;
+        margin-left: 10px;
+    }
+    .fine-date p:last-child{
+        margin-left: -40px;
+    }
+    .fine-title > div:first-child{
+        width: 30px;
+    }
+    .fine-view{
+        padding: 20px;
+    }
+    .fine-view-filter .btn{
+        display: none;
+    }
+    .insurance-item{
+        width: 100%;
     }
 }
 
@@ -779,6 +872,45 @@
     aside .sidebar-menu-block{
         padding-bottom: 80px;
     }
+    .insurance h2{
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .insurance-item{
+        font-size: 14px;
+    }
+    .insurance-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 30px;
+
+    }
+    .insurance{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .insurance-mob .cars-table-body{
+        flex-direction: column;
+        border: 0;
+        gap: 5px;
+        margin-top: 15px;
+        padding-left: 20px;
+
+    }
+    .insurance-mob .cars-table-body > div:first-child, .insurance-mob .cars-table-body > div:last-child{
+        background: #fff;
+        border: none;
+        padding: 0;
+    }
+    .insurance-table .cars-table-mob-head{
+        border-bottom: 1px solid #DAE3F8;
+    }
+    .insurance-table .btn-opacity{
+        width: 100%;
+        height: 48px;
+        color: #EC8080;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -803,6 +935,12 @@
     }
     .profile .add-car-item .btn-opacity{
         width: 100%!important;
+    }
+    .fine-date p:last-child{
+        width: 50px;
+    }
+    .fine-price{
+        margin-left: 0;
     }
 
 }

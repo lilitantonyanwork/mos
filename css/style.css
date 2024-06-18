@@ -495,6 +495,7 @@ div{
     gap: 5px;
     padding: 13px;
     width: 210px;
+    height: 48px;
     box-sizing: border-box;
     align-items: center;
     border-radius: 5px;
@@ -1703,6 +1704,19 @@ input::placeholder{
     width: 60px;
     height: 60px;
     border-radius: 5px;
+    position: relative;
+}
+.fine-photo:before{
+        content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #3A3C48A1;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.fine-photo svg{
+    z-index: 1;
 }
 
 .profile  .input-block  input{
@@ -1907,4 +1921,204 @@ textarea{
 .cars-filter-sort:hover .sort-list{
     display: flex;
     cursor: pointer;
+}
+.fine-title > div:first-child{
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+.fine-title div{
+    font-family: "Golos Text", sans-serif;
+    color: #2C3036;
+}
+.fine-body{
+    padding-left: 40px;
+}
+
+.fine-body h2{
+    color: #546070;
+    font-size: 20px;
+    padding-left: 20px;
+    border-left: 5px solid #D92020;
+    display: flex;
+    align-items: center;
+}
+.fine-body-title{
+    align-items: flex-start;
+}
+.fine-info p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: "Golos Text", sans-serif;
+}
+.fine-info p span{
+    display: flex;
+    width: 60%;
+}
+.fine-info p:last-child span{
+    font-size: 14px;
+}
+.fine-date{
+    gap: 10px;
+    margin-left: 19px;
+}
+.fine-date span{
+    display: flex;
+    /*align-items: center;*/
+    color:#546070;
+    align-items: flex-end;
+    gap: 6px;
+}
+.fine-date p{
+    display: flex;
+
+    gap: 19px;
+}
+.fine-date p:last-child{
+    gap: 2px;
+    align-items: center;
+}
+.fine-date p:last-child span{
+    color: #9A9A9A;
+}
+.fine-title div:last-child{
+    margin-left: auto;
+}
+.fine-title div:last-child a{
+    color: #2C3036;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.fine-car-number{
+    width: 30%;
+    text-align: center;
+    color: #2C3036;
+}
+.fine-list{
+    border-bottom: 1px solid #DAE3F8;
+    margin-bottom: 100px;
+}
+.fine-title{
+    padding-bottom: 20px;
+}
+
+.fine-title input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+.fine-title.opened div:last-child svg{
+    transform: rotate(180deg);
+}
+.fine-price{
+    white-space: nowrap;
+    margin-right: 50px;
+    font-weight: 500    ;
+}
+.insurance{
+    background: #fff;
+    border: 1px solid #DAE3F8;
+    border-radius: 10px;
+    padding: 40px 30px;
+}
+.insurance-list-column{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.insurance-item{
+    padding: 20px;
+    border: 1px solid #DAE3F8;
+    border-radius: 10px;
+    width: calc((100% - 40px)/3);
+}
+.insurance-item .car-photo{
+    width: 60px;
+    height: 60px;
+}
+.insurance-item > div:first-child{
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.insurance-item > div:first-child div:last-child{
+    margin-left: auto;
+}
+.insurance-item {
+    color: #2C3036;
+    font-family: "Golos Text", sans-serif;
+}
+.insurance-item p:first-child{
+    margin-bottom: 5px;
+}
+.insurance-name{
+    gap: 7px;
+    margin-bottom: 5px;
+}
+.insurance-item-add{
+    background: #FFECEC;
+    border: 1px solid #F7C1CE;
+    padding: 0;
+}
+.insurance-item-add button{
+    width: 100%;
+    height: 100%;
+    color: #EC8080;
+    gap: 5px;
+    padding: 20px;
+}
+
+.insurance h2{
+    color: #2C3036;
+    padding-left: 20px;
+    border-left: 5px solid #D92020;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.insurance-view{
+    gap: 10px;
+}
+.insurance-table td,
+.insurance-table th{
+    text-align: left;
+}
+.insurance-table button:hover + .settings-menu{
+    display: flex;
+}
+.insurance-table td:last-child > div{
+    position: relative;
+}
+.settings-menu {
+    position: absolute;
+    border: 1px solid #DAE3F8;
+    width: 193px;
+    border-radius: 10px;
+    background: #fff;
+    right: 30px;
+}
+.settings-menu a{
+    padding: 15px 20px;
+    color: #546070;
+    font-family: "Golos Text", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.settings-menu a:first-child{
+    border-bottom: 1px solid #DAE3F8;
+}
+
+.insurance-table .car-status-th{
+    width: 53px;
+}
+.insurance-company{
+    white-space: pre-line;
+}
+.insurance-table p{
+    white-space: nowrap;
+}
+.insurance div{
+    font-family: "Golos Text", sans-serif;
 }
