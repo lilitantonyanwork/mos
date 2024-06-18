@@ -241,6 +241,8 @@ header{
 }
 .navbar-profile{
     gap: 10px;
+    min-height: 50px;
+    cursor: pointer;
 }
 .navbar-profile-title{
     color: #2C3036;
@@ -472,6 +474,7 @@ div{
     padding: 25px 30px;
     margin-bottom: 25px;
     border-radius: 10px;
+    overflow: auto;
 }
 .cars-filter-sort{
     gap: 20px;
@@ -1127,6 +1130,7 @@ input::placeholder{
     height: 100%;
     top: 0;
     width: 100%;
+    z-index: 9;
 }
 .popup-content{
     background: #fff;
@@ -1176,6 +1180,7 @@ input::placeholder{
 .popup-content .btn {
    margin-top:auto;
    width: 100%;
+    height: 56px;
 }
 .popup-content div{
     margin-bottom: 25px;
@@ -1263,7 +1268,7 @@ input::placeholder{
 }
 
 .diagnostic-table-content .car-status div{
-    width: 53px;
+    width: 100%;
 }
 .diagnostic-table-content  th,
 .diagnostic-table-content  td{
@@ -1404,10 +1409,11 @@ input::placeholder{
     flex-wrap: wrap;
 }
 
-.booking-card form{
+.booking-card .form{
     flex-direction: column;
     gap: 25px;
     height: 100%;
+    display: flex;
 }
 .booking-card .car-photo{
     width: 160px;
@@ -1428,7 +1434,7 @@ input::placeholder{
 
     width: 100%;
 }
-.booking-card form label{
+.booking-card .form label{
     gap: 10px;
     font-family: "Golos Text", sans-serif;
     color: #2C3036;
@@ -1808,6 +1814,7 @@ textarea{
 
 .popup-propusk .btn-opacity{
     width: 205px;
+    height: 48px;
 }
 .popup-propusk >div >div{
     gap: 20px;
@@ -1837,6 +1844,7 @@ textarea{
     border-radius: 10px;
     padding: 15px 20px;
      top: 75px;
+     z-index: 9;
 }
 .navbar-dropdown a{
     font-size: 14px;
