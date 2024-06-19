@@ -82,6 +82,10 @@ hr{
     background: #D92020;
     border-radius: 5px;
 }
+.sidebar-menu-item-active{
+    background: #D92020;
+    border-radius: 5px;
+}
 .sidebar-menu-link{
     color: #2C3036;
     font-size: 16px;
@@ -92,13 +96,19 @@ hr{
 }
 
 
-.sidebar-menu-item:hover .sidebar-menu-link{
+.sidebar-menu-item:hover .sidebar-menu-link,
+.sidebar-menu-item-active .sidebar-menu-link
+{
     color: #fff;
 }
 .sidebar-menu-item:hover .sidebar-menu-link svg path,
 .sidebar-menu-item:hover .sidebar-menu-link svg circle,
 .sidebar-menu-item:hover .sidebar-menu-link svg line,
-.sidebar-menu-item:hover .sidebar-menu-link svg rect
+.sidebar-menu-item:hover .sidebar-menu-link svg rect,
+.sidebar-menu-item-active .sidebar-menu-link svg path,
+.sidebar-menu-item-active .sidebar-menu-link svg circle,
+.sidebar-menu-item-active .sidebar-menu-link svg line,
+.sidebar-menu-item-active .sidebar-menu-link svg rect
 {
     stroke: #fff;
 }
@@ -1092,6 +1102,16 @@ input::placeholder{
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
 }
+select{
+    height: 48px;
+    border: 1px solid #DAE3F8;
+    border-radius: 5px;
+    padding: 14px 15px;
+    box-sizing: border-box;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+}
 .add-car-item div:first-child{
     margin-bottom: 20px;
 }
@@ -1270,6 +1290,7 @@ input::placeholder{
 
 .diagnostic-table-content .car-status div{
     width: 100%;
+    overflow: visible;
 }
 .diagnostic-table-content  th,
 .diagnostic-table-content  td{
@@ -2121,4 +2142,238 @@ textarea{
 }
 .insurance div{
     font-family: "Golos Text", sans-serif;
+    align-items: baseline;
+}
+.insurance form .add-car-item .car-photo{
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 89px;
+}
+.insurance form .add-car-item .car-photo svg{
+    width: 20px;
+    height: 20px;
+}
+.insurance form .add-car-item div:first-child .car-photo{
+    border: 1px solid #F7C1CE;
+    background: #FFECEC;
+}
+.insurance form .add-car-item div:nth-child(2) .car-photo{
+    border: 1px solid #F7E1C1;
+    background:#FCF5EB;
+}
+.insurance form .add-car-item div:last-child .car-photo{
+    border: 1px solid #BDE8D3;
+    background:#EAF8F1;
+    margin-top: 0;
+}
+.insurance form .add-car-item div:nth-child(2) .car-photo svg path{
+    fill: #F2A735;
+}
+.insurance form .add-car-item div:last-child .car-photo svg path{
+    fill: #27A468;
+}
+.insurance form label{
+    color: #2C3036;
+    font-size: 14px;
+    font-family: "Golos Text", sans-serif;
+}
+
+.insurance form .add-car-item div:first-child{
+    margin-bottom: 0;
+}
+.insurance form .add-car-item:last-child div:last-child{
+    margin-top: 0;
+    gap: 5px;
+}
+.insurance form .add-car-item {
+    gap: 25px;
+}
+.insurance form {
+    gap: 25px;
+}
+.insurance form .add-car-item:first-child label{
+    color: #546070;
+    font-size: 16px;
+    gap: 10px;
+}
+.insurance form input[type=text]{
+    height: 48px;
+    border: 1px solid #DAE3F8;
+    border-radius: 5px;
+    padding: 14px 15px;
+    box-sizing: border-box;
+    width: 330px;
+}
+.insurance form  select{
+    width: 330px;
+}
+.insurance .input-block{
+    width: 330px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+.insurance form .input-block input{
+    border: none;
+}
+.insurance form .add-car-item{
+    margin-bottom: 30px;
+}
+.insurance form .add-car-item:nth-child(2){
+    margin-bottom: 10px;
+}
+.insurance form .add-car-item .btn-opacity{
+    width: 241px;
+}
+.insurance form .add-car-item .btn-opacity svg{
+    width: 16px;
+    height: 16px;
+}
+.insurance form .add-car-item:last-child div:last-child{
+    gap: 20px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #DAE3F8;
+}
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.1rem;
+    border: 1px solid #DAE3F8;
+    border-radius: 3px;
+}
+input[type="checkbox"]::before {
+    content: "";
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 7px;
+
+}
+input[type="checkbox"]:checked::before {
+    border: solid #CB2222;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #DAE3F8;
+}
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 0.1rem;
+    border: 1px solid #9A9A9A;
+    border-radius: 100%;
+}
+input[type="radio"]::before {
+    content: "";
+    margin-top: 1.5px;
+
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+
+}
+input[type="radio"]:checked::before {
+    background:#CB2222;
+}
+input[type="radio"]:checked{
+    border-color: #CB2222;
+}
+input[type="radio"]:checked + label{
+    color: #CB2222;
+}
+input[type="radio"] + label{
+    font-size: 16px;
+    color: #9A9A9A;
+}
+input[type="radio"]:hover {
+    color: black;
+}
+.form-control{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.offer-img{
+    width: 369px;
+    height: 466px;
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+}
+.offer-info{
+    gap: 25px;
+}
+.offer-text{
+    width: calc(100% - 421px);
+}
+.offer-text h4{
+    font-size: 20px;
+    color: #2C3036;
+    font-weight: 500;
+    padding-top: 20px;
+    line-height: 28px;
+   max-width: 500px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.offer-text h4 span{
+    color: #CB2222;
+    font-weight: 600;
+
+}
+.offer-text p{
+    color: #546070;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 15px;
+    max-width: 530px;
+    width: 100%;
+}
+.offer-text .btn{
+    margin-top: 40px;
+    width: 251px;
+    background: #CB2222;
+    border: 1px solid #DF4C4C;
+}
+
+.special-offers .special-item{
+    height: 116px;
+}
+.special-offers .special-item img{
+    object-fit: cover;
+}
+.special-offers .block-title{
+    padding-left: 20px;
+    border-left: 5px solid #D92020;
+    font-size: 24px;
+    color: #2C3036;
+    font-weight: 500    ;
+    margin-bottom: 30px;
+}
+
+.special-text{
+    font-size: 32px;
+    padding-top: 0;
+    padding-right: 0;
+}
+.special-offers{
+    padding-bottom: 82px;
 }

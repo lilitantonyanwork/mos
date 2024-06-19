@@ -6,6 +6,17 @@
         display: block;
         overflow: hidden;
     }
+    .insurance form select{
+        width: 250px;
+    }
+    .insurance form input[type=text]{
+        width: 250px;
+    }
+    .insurance .input-block{
+        width: 250px;
+
+    }
+
 }
 @media screen and (max-width: 1320px) {
     .propusk-list{
@@ -108,6 +119,13 @@
     }
     .insurance-item{
         width: calc((100% - 20px)/2);
+    }
+    .insurance form .add-car-item{
+        flex-wrap: wrap;
+    }
+
+    .add-car-item:nth-child(2){
+        width: 100%;
     }
 }
 @media screen and (max-width: 1024px){
@@ -230,6 +248,21 @@
     .fine-info p span {
         text-align: right;
         justify-content: flex-end;
+    }
+    .insurance form input[type=text] {
+        width: 291px;
+    }
+    .insurance form select {
+        width: 291px;
+    }
+    .offer-info{
+        flex-direction: column;
+    }
+    .offer-text {
+        width: 100%;
+    }
+    .special-offers .special-item{
+        height: 172px;
     }
 }
 
@@ -381,6 +414,36 @@
     .insurance-item{
         width: 100%;
     }
+    .insurance form input[type=text] {
+        width: 100%;
+
+    }
+    .insurance form select {
+        width: 100%;
+
+    }
+    .insurance form .add-car-item:not(:first-child) > div{
+        width: 100%;
+    }
+    .insurance .input-block {
+        width: 100%;
+
+    }
+    .insurance form .add-car-item:last-child div:last-child{
+        flex-direction: column;
+    }
+    .insurance form .add-car-item:last-child div:last-child .btn{
+        width: 100%;
+
+    }
+    .insurance form{
+        margin-top: 25px;
+    }
+    .offer-img{
+        width: 305px;
+        height: 385px;
+    }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -429,7 +492,7 @@
         font-family: "Golos Text", sans-serif;
     }
     .personal-info{
-        padding: 30px;
+        padding: 30px 20px;
     }
     .welcome-text{
         font-size: 18px;
@@ -440,7 +503,7 @@
         border-left: 1px solid #DAE3F8;
     }
     .special{
-        padding: 30px;
+        padding: 30px 20px;
     }
     .block-title{
         font-size: 18px;
@@ -910,6 +973,9 @@
         width: 100%;
         height: 48px;
         color: #EC8080;
+    }
+    .special-text{
+        font-size: 26px;
     }
 }
 
