@@ -23,7 +23,9 @@ a{
 aside{
     width: 310px;
     background: #FEFEFE;
-    border-right:1px solid #DAE3F8
+    border-right:1px solid #DAE3F8;
+    display: flex;
+    flex-direction: column;
 }
 .j-spc-btw{
     justify-content: space-between;
@@ -48,10 +50,13 @@ aside{
     font-weight: 700;
     padding-top: 4px;
     white-space: nowrap;
+    font-family: "Golos Text", sans-serif;
 }
 .sidebar-text{
     color: #5e5e5e;
     font-size: 10px;
+    font-family: "Golos Text", sans-serif;
+
 }
 .sidebar-head{
     padding: 20px 56px 22px 47px;
@@ -93,6 +98,7 @@ hr{
     gap: 10px;
     align-items: center;
     font-family: "Golos Text", sans-serif;
+
 }
 
 
@@ -120,6 +126,7 @@ hr{
     margin-bottom: 16px;
     margin-top: 32px;
     padding-left: 24px;
+    font-family: "Golos Text", sans-serif;
 }
 .sidebar-help .sidebar-menu{
     padding-top: 0;
@@ -128,7 +135,7 @@ hr{
     gap: 15px;
     padding-left: 24px;
     padding-right: 24px;
-    margin-bottom: 90px;
+    margin-bottom: 42px;
 }
 .sidebar-story img{
     width: 100%;
@@ -144,6 +151,7 @@ hr{
     color: #9A9A9A;
     margin-top: 5px;
     font-weight: 500;
+    font-family: "Golos Text", sans-serif;
 }
 
 .sidebar-story-img{
@@ -163,6 +171,7 @@ hr{
 .sidebar-footer{
     padding: 22px 44px;
     border-top: 1px solid #DAE3F8;
+    margin-top: auto;
 }
 
 .sidebar-close{
@@ -196,11 +205,10 @@ header{
     gap: 70px;
     justify-content: space-between;
     width: 100%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 26px;
+    padding-right: 26px;
 }
 .navbar-search{
-    max-width: 1058px;
     width: 100%;
 }
 .navbar-balance{
@@ -214,6 +222,7 @@ header{
 }
 .navbar-balance p{
     white-space: nowrap;
+    font-family: "Golos Text", sans-serif;
 }
 .input-block{
     border: 1px solid #DAE3F8;
@@ -259,6 +268,7 @@ header{
     font-size: 14px;
     margin-bottom: 1px;
     line-height: 16px;
+    font-family: "Golos Text", sans-serif;
 }
 .navbar-profile-text{
     line-height: 16px;
@@ -275,7 +285,8 @@ header{
 .personal-info{
     background: #fff;
     padding: 25px 30px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .welcome-text{
@@ -289,7 +300,7 @@ header{
 }
 .welcome-text span{
     color: #d92020;
-    font-weight: 600;
+    font-weight: 700;
 
 }
 .personal-info-item{
@@ -302,16 +313,19 @@ header{
 }
 
 .personal-info-item p:first-child{
-    font-size: 24px;
+    font-size: 20px;
     color: #2C3036;
     margin-bottom: 5px;
     line-height: 24px;
     font-weight: 500;
+    font-family: "Golos Text", sans-serif;
 
 }
 .personal-info-item p:last-child{
     color: #546070;
     font-size: 16px;
+    font-family: "Golos Text", sans-serif;
+
 }
 .personal-info-item span{
     color: #d92020;
@@ -319,7 +333,7 @@ header{
 .special{
     background: #fff;
     padding: 25px 30px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-radius: 10px;
     gap: 20px;
 }
@@ -327,7 +341,7 @@ header{
 .services{
     background: #fff;
     padding: 25px 30px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-radius: 10px;
 
 }
@@ -349,12 +363,18 @@ header{
 }
 .special-item{
     width: 33%;
+    height: 172px;
     overflow: hidden;
     border-radius: 10px;
     border: 1px solid #DAE3F8;
     box-sizing: border-box;
     position: relative;
 
+}
+.special-item img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 .special-item:before{
     content: '';
@@ -369,13 +389,15 @@ header{
     top: 15px;
     left: 15px;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     width: 215px;
     line-height: 23px;
+
 
 }
 .special-item p span{
     font-weight: 700;
+    font-size: 24px;
 }
 
 .special-list{
@@ -386,22 +408,24 @@ header{
     gap: 20px;
 }
 .services-item{
-    max-width: 198px;
-    width: 100%;
+    width: calc((100% - 120px) / 7);
     text-align: center;
+
 
 }
 
 .service-item-img{
     border: 1px solid #DAE3F8;
-    background: radial-gradient(217.45% 83.93% at 50% 100%, #FFFFFF 36.5%, rgba(255, 255, 255, 0.5) 100%);
     border-radius: 10px;
     margin-bottom: 11px;
+    background: url("../images/service-bg.png") no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 .personal-manager-block{
         background: #fff;
         padding: 25px 30px;
-        margin-bottom: 25px;
+        margin-bottom: 20px;
         border-radius: 10px;
 
 }
@@ -576,7 +600,7 @@ thead{
 .car-status div{
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: fade;
+    text-overflow: ellipsis;
     width: 100px;
     display: block;
 }
@@ -884,8 +908,8 @@ input::placeholder{
     justify-content: center;
 }
 .car-photo svg{
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
 }
 .add-car-item:nth-child(2){
     width: 221px;
@@ -987,6 +1011,8 @@ input::placeholder{
     border-left: 5px solid #d92020;
     color: #2C3036;
     font-weight: 500;
+    display: flex;
+    align-items: center;
 
 }
 
@@ -1043,8 +1069,11 @@ input::placeholder{
     border: 1px solid #DAE3F8;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-left: 0;
+    background: #F2F5FA;
     width: 54px;
     height: 48px;
+
 }
 .form-filter-item:last-child > div{
     width: 246px;
@@ -2215,6 +2244,7 @@ textarea{
 }
 .insurance form .input-block input{
     border: none;
+    font-family: "Golos Text", sans-serif;
 }
 .insurance form .add-car-item{
     margin-bottom: 30px;
@@ -2713,4 +2743,25 @@ input[type="radio"]:hover {
     top: -4px;
     font-family: "Golos Text", sans-serif;
     font-weight: 600;
+}
+
+.personal-manager-info{
+    font-family: "Golos Text", sans-serif;
+}
+.personal-manager-info p{
+    color: #2C3036;
+}
+.service-title{
+    font-family: "Golos Text", sans-serif;
+    color: #2C3036;
+}
+.has-checkbox .form-control{
+    font-size: 14px;
+    color: #9A9A9A;
+    white-space: nowrap;
+    margin-top: 10px;
+}
+.fine-view-filter > div:first-child{
+    gap: 10px;
+    color: #9A9A9A;
 }
